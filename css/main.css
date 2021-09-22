@@ -97,37 +97,83 @@ textarea {
 
 
 html {
-  background-color: #232329;
+  background-color: rgb(39, 37, 66);
   height: 100%;
+  width: 100%;
+
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
+  color: #fff;
 
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 300;
+header
+ {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;  
+  background-color: rgb(236, 196, 16);
+  height: 80px;
+  width: 100%;
+}
+
+main {
+  font-size: 1.5em;
+  letter-spacing: 1.75px;
+  background-color: rgb(134, 9, 97);
+  height: 250px;
+  width: 100%;
+}
+
+header,
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer {
+  font-size: 1em;
+  letter-spacing: 2px;
+  background-color: rgb(60, 150, 0);
+  height: 50px;
+  width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:space-between;    
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.flex-items {
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 2.5rem;
+  background-color: rgb(39, 37, 66);
+  width: 28%;
+  height: 50vh;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
+  align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+
+#div-1, #div-2, #div-3 {
+  
   color: rgb(255, 255, 255);
   line-height: 1.5em;
   font-size: 1em;
   padding: 2%;
-  height: 300px;
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
 }
 
 /*-----Tablet Styles-----*/
@@ -135,7 +181,7 @@ body {
 /*-----Desktop Styles------*/
 
 @media only screen and (min-width: 1200px){
-    .div-1, .div-2 {
+    #div-1, #div-2 {
         border-right: 1px solid rgba(255, 255, 255, 0.493);
     }
 }
